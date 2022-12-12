@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <title>Sprint 1</title>
+</head>
+
+<body>
+    <div class="contenedor_principal">
+
+        <section class="contenedor_header">
+
+            <div class="contenedor_balance">
+                <p>My balance</p>
+                <h3>$921.48</h3>
+            </div>
+
+            <div class="contenedor_img">
+                <img src="assets/img/logo.svg" alt="logo" />
+            </div>
+
+        </section>
+
+
+        <section class="contenedor_body">
+
+            <article class="contenedor_titulo">
+                <p>Spending - Last 7 days</p>
+            </article>
+
+            <article class="contenedor_graficas">
+
+                <div>
+                    <span id="day-1"></span>
+                    <div onmouseenter="mostrar(1)" onmouseleave="ocultar(1)" class="barra-1"></div>
+                    <p>mon</p>
+                </div>
+
+                <div>
+                    <span id="day-2"></span>
+                    <div onmouseenter="mostrar(2)" onmouseleave="ocultar(2)" class="barra-2"></div>
+                    <p>tue</p>
+                </div>
+
+                <div>
+                    <span id="day-3"></span>
+                    <div onmouseenter="mostrar(3)" onmouseleave="ocultar(3)" class="barra-3"></div>
+                    <p>wed</p>
+                </div>
+
+                <div>
+                    <span id="day-4"></span>
+                    <div onmouseenter="mostrar(4)" onmouseleave="ocultar(4)" class="barra-4"></div>
+                    <p>thu</p>
+                </div>
+
+                <div>
+                    <span id="day-5"></span>
+                    <div onmouseenter="mostrar(5)" onmouseleave="ocultar(5)" class="barra-5"></div>
+                    <p>fri</p>
+                </div>
+
+                <div>
+                    <span id="day-6"></span>
+                    <div onmouseenter="mostrar(6)" onmouseleave="ocultar(6)" class="barra-6"></div>
+                    <p>sat</p>
+                </div>
+
+                <div>
+                    <span id="day-7"></span>
+                    <div onmouseenter="mostrar(7)" onmouseleave="ocultar(7)" class="barra-7"></div>
+                    <p>sun</p>
+                </div>
+
+
+            </article>
+
+
+            <div class="linea_footer"></div>
+
+            <article class="total">
+
+                <div>
+                    <h4 class="total_titulo">Total this month</h4>
+                    <p id="total" class="total_valor"></p>
+                </div>
+
+                <div class="total_porcentaje">
+                    <p class="total_porcentaje_value">+2.4%</p>
+                    <span class="total_porcentaje_title">from last month</span>
+                </div>
+
+            </article>
+
+
+        </section>
+
+    </div>
+
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
